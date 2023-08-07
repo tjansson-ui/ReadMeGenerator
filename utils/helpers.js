@@ -23,7 +23,7 @@ export const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'Enter installation instructions',
+        message: 'Enter installation instructions if applicable',
     },
     {
         type: 'input',

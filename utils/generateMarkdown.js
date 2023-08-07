@@ -15,33 +15,33 @@ export function generateMarkdown(data) {
   return `
   # ${data.title}
 
-  S{description}
+  ${description}
 
   > ## Table of Contents
-  > **[Install]**
-  > **[Usage]**
-  > **[Contributions]**
-  > **[Tests]**
-  > **[License]**
-  > **[Contact]**
+  > - **[Install](#installation)**
+  > - **[Usage](#usage)**
+  > - **[Contributions](#contributions)**
+  > - **[Tests](#tests)**
+  > - **[License](#license)**
+  > - **[Questions](#Questions)**
 
-  ##Installation
-  ${installation}
+  ## Installation
+  ${data.installation}
 
-  ##Usage
-  ${usage}
+  ## Usage
+  ${data.usage}
 
-  ##Contributions
-  ${contributions}
+  ## Contributions
+  ${data.contributions}
 
-  ##Tests
-  ${tests}
+  ## Tests
+  ${data.tests}
 
-  ##Lincense
-  This project is licensed under ${license}
+  ## License
+  This project is licensed under ${data.license}
 
-  ##Contact for Questions
-  My GitHub username is ${githubUser}. You may contact me at ${email} with any questions.
+  ## Questions
+  My GitHub username is ${data.githubUser}. You may contact me at ${data.email} with any questions. Other projects can be found [here](https://github.com/${data.githubUser})
 `;
 }
 

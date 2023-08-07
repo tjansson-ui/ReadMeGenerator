@@ -1,8 +1,8 @@
 // TODO: Include packages needed for this application
 import fs from 'fs'
 import inquirer from "inquirer"
-import {generateMarkdown} from "./utils/generateMarkdown" 
-import {questions} from "./utils/helpers"
+import { generateMarkdown } from "./utils/generateMarkdown.js" 
+import { questions } from "./utils/helpers.js"
 
 
 
@@ -17,7 +17,7 @@ function init() {
     inquirer.prompt(questions)
     .then(answers => {
         const markdown = generateMarkdown(answers)
-        fs.writeFile(` ./README.md`, markdown, err => {
+        fs.writeFile("./ReadMeFolder/README.md", markdown, err => {
             if (err)
             {
                 throw err
