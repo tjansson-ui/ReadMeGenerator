@@ -4,16 +4,19 @@ export const questions = [
         type: 'input',
         name: 'title',
         message: 'What is the title of this project?',
+        default: 'Current Project'
     },
     {
         type: 'input',
         name: 'githubUser',
         message: 'What is your Github username?',
+        default: 'N/A'
     }, 
     {
         type: 'input',
         name: 'email',
         message: 'When is your email address?',
+        default: 'N/A'
     }, 
     {
         type: 'input',
@@ -24,11 +27,13 @@ export const questions = [
         type: 'input',
         name: 'installation',
         message: 'Enter installation instructions if applicable',
+        default: 'There are no required installation instructions'
     },
     {
         type: 'input',
         name: 'usage',
         message: 'Enter usage information',
+        default: 'No usage requirements'
     }, 
     {
         type: "list",
@@ -39,12 +44,14 @@ export const questions = [
     {
         type: 'input',
         name: 'contributions',
-        message: 'Enter contribution guidelines. Skip if NA.',
+        message: 'Enter contribution guidelines',
+        default: 'No project contributors'
     },
     {
         type: 'input',
         name: 'tests',
         message: 'Enter test instructions',
+        default: 'There is no available testing instructions at this time'
     }]; //questions for the inquirer prompt
 
 //license Info object
@@ -52,32 +59,32 @@ export const licInfo = [
     { 
         name: "Apache License 2.0",
         badge: "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
-        link: "https://choosealicense.com/licenses/apache-2.0/",
+        link: "Learn more at https://choosealicense.com/licenses/apache-2.0/",
     },
     { 
         name: "GNU General Public License v3.0",
         badge: "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
-        link: "https://choosealicense.com/licenses/gpl-3.0/",
+        link: "Learn more at https://choosealicense.com/licenses/gpl-3.0/",
     },
     { 
         name: "MIT License",
         badge: "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
-        link: "https://choosealicense.com/licenses/mit/",
+        link: "Learn more at https://choosealicense.com/licenses/mit/",
     },
     { 
         name: "GNU Affero General Public License v3.0",
         badge: "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)",
-        link: "https://choosealicense.com/licenses/agpl-3.0/",
+        link: "Learn more at https://choosealicense.com/licenses/agpl-3.0/",
     },
     { 
         name: "Mozilla Public License 2.0",
         badge:  "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)",
-        link: "https://choosealicense.com/licenses/mpl-2.0/",
+        link: "Learn more at https://choosealicense.com/licenses/mpl-2.0/",
     },
     { 
         name: "The Unlicense",
         badge: "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)",
-        link: "https://choosealicense.com/licenses/unlicense/",
+        link: "Learn more at https://choosealicense.com/licenses/unlicense/",
     },
     {
     name: "None",

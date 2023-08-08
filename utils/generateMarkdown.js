@@ -1,3 +1,4 @@
+// Included packages needed for this application
 import { licInfo } from "./helpers.js";
 
 // Creates a function to generate markdown for README
@@ -8,13 +9,13 @@ export function generateMarkdown(data) {
     for(let i = 0; i < licInfo.length; i++) {
       if (data.license === licInfo[i].name) {
         licenseEntryInfo = 
-        ` ${licInfo[i].badge} This project is licensed under: ${licInfo[i].name} ${licInfo[i].link}` 
+        ` ${licInfo[i].badge} 
+        This project is licensed under: ${licInfo[i].name}. ${licInfo[i].link}` 
       }
     }
   } else {
     licenseEntryInfo = "Not Applicable"
   }
-  console.log(licenseEntryInfo)
 
   return `
   # ${data.title}
@@ -22,12 +23,12 @@ export function generateMarkdown(data) {
   ${data.description}
 
   > ## Table of Contents
-  > - **[Install](#installation)**
-  > - **[Usage](#usage)**
-  > - **[Contributions](#contributions)**
-  > - **[Tests](#tests)**
-  > - **[License](#license)**
-  > - **[Questions](#Questions)**
+  > - **[Installation Guidelines](#installation)**
+  > - **[Usage Requirements](#usage)**
+  > - **[Contribution Information](#contributions)**
+  > - **[Testing Information](#tests)**
+  > - **[Licensing](#license)**
+  > - **[Questions?](#Questions)**
 
   ## Installation
   ${data.installation}
