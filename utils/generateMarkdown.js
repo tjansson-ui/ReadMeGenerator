@@ -1,21 +1,25 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
- function renderLicenseBadge(license) {}
+import { licInfo } from "./helpers.js";
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
- function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
- function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
+// Creates a function to generate markdown for README
 export function generateMarkdown(data) {
+  let licenseEntryInfo = ""
+  if(!!data.license) {
+    
+    for(let i = 0; i < licInfo.length; i++) {
+      if (data.license === licInfo[i].name) {
+        licenseEntryInfo = 
+        ` ${licInfo[i].badge} This project is licensed under: ${licInfo[i].name} ${licInfo[i].link}` 
+      }
+    }
+  } else {
+    licenseEntryInfo = "Not Applicable"
+  }
+  console.log(licenseEntryInfo)
+
   return `
   # ${data.title}
 
-  ${description}
+  ${data.description}
 
   > ## Table of Contents
   > - **[Install](#installation)**
@@ -38,7 +42,7 @@ export function generateMarkdown(data) {
   ${data.tests}
 
   ## License
-  This project is licensed under ${data.license}
+  ${licenseEntryInfo}
 
   ## Questions
   My GitHub username is ${data.githubUser}. You may contact me at ${data.email} with any questions. Other projects can be found [here](https://github.com/${data.githubUser})
