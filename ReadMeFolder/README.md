@@ -1,30 +1,31 @@
 
-  # Current Project
+  # Title
 
-  There is nothing to describe
+  this is a description
 
   > ## Table of Contents
-  > - **[Install](#installation)**
-  > - **[Usage](#usage)**
-  > - **[Contributions](#contributions)**
-  > - **[Tests](#tests)**
-  > - **[License](#license)**
-  > - **[Questions](#Questions)**
+  > - **[Installation Guidelines](#installation)**
+  > - **[Usage Requirements](#usage)**
+  > - **[Contribution Information](#contributions)**
+  > - **[Testing Information](#tests)**
+  > - **[Licensing](#license)**
+  > - **[Questions?](#Questions)**
 
   ## Installation
   There are no required installation instructions
 
   ## Usage
-  tjj;lkfjdkp
+  No usage requirements
 
   ## Contributions
-  df
+  No project contributors
 
   ## Tests
   There is no available testing instructions at this time
 
   ## License
-   [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) This project is licensed under: GNU General Public License v3.0. Learn more at https://choosealicense.com/licenses/gpl-3.0/
+   [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0) 
+        This project is licensed under: GNU Affero General Public License v3.0. Learn more at https://choosealicense.com/licenses/agpl-3.0/
 
   ## Questions
-  My GitHub username is me. You may contact me at This with any questions. Other projects can be found [here](https://github.com/me)
+  My GitHub username is Tor. You may contact me at Tor@email.com with any questions. Other projects can be found [here](https://github.com/Tor)
