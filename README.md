@@ -15,6 +15,8 @@ Make sure to first initiate npm and install the relevant node modules. This proj
 Respond to the questions present or press enter to take the default value. 
 Once complete, the readme file can be found in the ReadMeFolder directory. 
 
+![Example image of readme creation](images/examplereadme.PNG)
+
 ### - GitHub User Info
 - Tor Jansson
 * [GitHub Link](https://github.com/tjansson-ui/ReadMeGenerator)
